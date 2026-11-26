@@ -5,7 +5,7 @@ import type { Category, Car } from "~/types";
 // Além de criar métodos para cada tipo de dado
 // Seja Categoria ou Carros
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "http://localhost:3001";
 
 async function fetchApi<T>(endpoints: string, options?: RequestInit): Promise<T> {
     const url = `${API_BASE_URL}${endpoints}`;
